@@ -282,7 +282,7 @@ section {
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: left;
 }
 
 .hero-p {
@@ -754,7 +754,16 @@ footer {
 strong.hi {
   color: #e8e8f0;
 }
-
+.grad-frame{
+  width: 100%;
+max-width: 480px;
+margin: 0 auto 32px;
+border-radius: 24px;
+overflow: hidden;
+}
+.grad-photo{
+ width: 100%;
+}
 @media (max-width: 700px) {
   #hero {
     grid-template-columns: 1fr;
@@ -762,7 +771,9 @@ strong.hi {
     text-align: center;
     gap: 0;
   }
-  
+  .hero-tags{
+    justify-content: center;
+  }
   .photo-wrap {
     display: none;
   }
