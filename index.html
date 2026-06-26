@@ -9,6 +9,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="style.css">
+<!-- Development version -->
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+<!-- Production version -->
+<script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
 
@@ -483,10 +488,19 @@
     <a href="https://www.linkedin.com/in/king-omosebi-5a60833a8" target="_blank" rel="noopener" class="social-link">
       <span>💼 LinkedIn</span>
     </a>
+    <a href="https://www.linkedin.com/in/king-omosebi-5a60833a8" target="_blank" rel="noopener" class="social-link">
+      <i data-lucide="chess-queen" class="chess-icon"></i>
+      <span>
+        
+        Fide</span>
+    </a>
   </div>
   <div class="footer-made">Built with HTML · Deployed on Vercel</div>
 </footer>
-
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
 <script>
   function scrollTo(id) {
     document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
